@@ -30,7 +30,7 @@ let viva = "Viva Swift!!!"
 var tipo = ""
 
 for  numero in numeros {
-    if numero % 5 == 0 {
+    if numero % 5 == 0 && numero ¡= 0 {
         tipo = tipo + bingo + " "
     }
     
