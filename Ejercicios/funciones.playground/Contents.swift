@@ -2,13 +2,15 @@
 
 import UIKit
 
-var str = "Hello, playground"
 
-func calcularIMC(peso: Double, altura: Double) ->Double{
-    let imc = peso / (altura * altura)
+
+func calcularIMC(pesoIntegral peso: Double, altura: Double) ->Double{
+
     
-    return imc
+    return peso / (altura * altura)
 }
 
-print(calcularIMC(95.0, altura:1.78))
+print(calcularIMC(pesoIntegral:95.0, altura:1.78))
+let imc = calcularIMC(pesoIntegral:95.0, altura:1.78)
+print(imc)
 
