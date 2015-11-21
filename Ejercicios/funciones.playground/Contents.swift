@@ -1,10 +1,10 @@
-//: funciones
+//: funciones y tuplas
 
 import UIKit
 
 
 
-func calcularIMC(pesoIntegral peso: Double, altura: Double) ->(Double, String){
+func calcularIMC(pesoIntegral peso: Double, altura: Double) ->(imcCalculado: Double, mensajeDeSalida: String){
     
     let imc = peso / (altura * altura)
     var mensaje = ""
@@ -18,8 +18,16 @@ func calcularIMC(pesoIntegral peso: Double, altura: Double) ->(Double, String){
     return resultado
 }
 
-let resultadoIMC = calcularIMC(pesoIntegral:95.0, altura:1.78)
+let(imc, mensaje) = calcularIMC(pesoIntegral:95.0, altura:1.78)
 
-resultadoIMC.0
-resultadoIMC.1
+imc
+mensaje
 
+let (imcTupla) = calcularIMC(pesoIntegral:95.0, altura:1.78)
+
+imcTupla.imcCalculado
+imcTupla.mensajeDeSalida
+
+var pelicula : (nombre: String, AñoDeSalida : Int, calificacion : Double) = ("Terminator", 1984, 10)
+
+pelicula.nombre
