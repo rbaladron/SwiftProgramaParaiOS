@@ -58,7 +58,7 @@ misteriosa(-1, variableB: -2)
 
 //5 .Selecciona la función obtenClienteVip que regrese una tupla con la edad (Int), nombre (String) y presupuesto (Double) con sus respectivos nombres de atributos, debe coincidir con el valor declarado en return.
 
-func obtenClienteVip()-> ( edad : Int, nombre : String, presupuesto : Double ){
+func obtenClienteVip()-> ( edad : Int,nombre : String, presupuesto:Double ){
     
     return (40, "Alejandro", 1545.70)
     
@@ -75,6 +75,7 @@ tupla.2
 
 tupla.nombre
 tupla.altura
+
 
 // 7. Selecciona todas las sentencias que declaren e asignen un valor inicial a un opcional.
 let letra : Bool? = nil
@@ -103,6 +104,8 @@ enum Canciones{
     
 }
 Canciones.BajoElSol
+
+
 
 // 9. Toma como base el siguiente código:
 
